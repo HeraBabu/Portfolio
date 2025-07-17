@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hera Babu Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap" rel="stylesheet">
+
+  
+  <!-- Font Awesome-->
+  <script src="https://kit.fontawesome.com/2f1794c74f.js" crossorigin="anonymous"></script>
+
+<!--favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+<link rel="manifest" href="image/site.webmanifest">
+
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo"><img class="logo" src="image/favicon.ico" alt="Hera Babu logo"></a>
+      <ul class="nav-list">
+        <li><a href="about/index.html" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero container">
+    <div class="hero-content">
+      <h1>
+        <span class="highlighted">Hera Babu</span>
+      </h1><br>
+      <h2>Frontend Developer & UX Enthusiast</h2>
+      <p class="hero-subtitle">
+        With a background in bioinformatics, I’m now transitioning into UX and frontend development to combine analytical thinking with creative problem-solving.</p>
+      <button id="viewResumeBtn" class="btn">View Resume</button>
+    </div>
+    <div class="hero-image">
+      <img src="image/headshot_hera.jpg" alt="Hera Babu profile" />
+    </div>
+  </section>
+<!-- Modal -->
+<div id="resumeModal" class="modal">
+  <span id="closeResumeModal" class="close">&times;</span>
+  <embed src="HeraBabu_CV.pdf" type="application/pdf" width="100%" height="600px" />
+</div>
+
+  <section id="projects" class="section container fade-in">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="image/rockpaperscissors.jpg" alt="Project One Screenshot" class="project-img" />
+      <div class="project-info">
+        <h3>Rock-Paper-Scissors Game</h3>
+        <p>A simple browser-based game built with HTML, CSS, and JavaScript. Users play against a computer that randomly selects its move, with real-time score tracking and instant feedback. This project helped me strengthen my skills in DOM manipulation, event handling, and core JavaScript logic. Future improvements may include animations, sound effects, and persistent high scores.
+</p>
+        <a href="https://github.com/HeraBabu/Rock-Paper-Scissors/" target="_blank" class="project-link">View Code</a>
+        <a href="projects/Javascript _ Rock, Paper, Scissors/index.html" target="_blank" class="project-link">View Live</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="image/memorygame.jpg" alt="Project Two Screenshot" class="project-img" />
+      <div class="project-info">
+        <h3>Memory Card Game</h3>
+        <p>A fun and interactive matching game where players flip cards to find matching pairs. Built using HTML, CSS, and JavaScript, the game features randomized card layouts, smooth flipping animations, and a move counter. This project helped me practice array handling, timers, conditionals, and dynamic DOM updates. Future enhancements could include difficulty levels, sound effects, and score saving with localStorage.</p>
+        <a href="https://github.com/HeraBabu/Memory-game" target="_blank" class="project-link">View Code</a>
+        <a href="projects/Javascript_memory/index.html" target="_blank" class="project-link">View Live</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="image/wanderlust.jpg" alt="Project Three Screenshot" class="project-img" />
+      <div class="project-info">
+        <h3>Hiking Adventures Website</h3>
+        <p>is a responsive hiking website designed to promote guided hiking trips for all ages and fitness levels. Built with HTML, Bootstrap 4, and custom CSS, the site includes features such as a trail photo carousel, pricing plans, customer testimonials, and app download buttons. This project helped enhance my frontend skills, especially in responsive design, layout structuring, and component-based UI development. Future plans include integrating interactive maps, trail reviews, and booking functionality.</p>
+        <a href="https://github.com/herababu/project-two" target="_blank" class="project-link">View Code</a>
+        <a href="projects/wanderlust/index.html" target="_blank" class="project-link">View Live</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="section container fade-in">
+    <h2>Contact Me</h2>
+    
+    <form action="https://formsubmit.co/herababu14@gmail.com" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+
+  </section>
+
+  <footer class="footer container section">
+  <p>&copy; 2025 Hera Babu</p>
+</footer>
+<!-- Scroll Back to Top Button -->
+  <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
