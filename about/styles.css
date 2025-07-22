@@ -80,11 +80,11 @@
     
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures even spacing */
-      gap: 2rem; /* More space between items */
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* even spacing */
+      gap: 2rem; /*space between items */
       max-width: 900px;
       margin: 0 auto;
-      align-items: stretch; /* Make all items the same height */
+      align-items: stretch; 
     }
     
     .gallery-item {
@@ -95,7 +95,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.18);
       overflow: hidden;
-      min-height: 260px; /* Ensures cards are even height */
+      min-height: 260px; 
     }
     
     .gallery-item img {
